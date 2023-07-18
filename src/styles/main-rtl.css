@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -100,8 +100,18 @@ a:visited {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+  }
+}
 .form-container_sec {
   width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .form-container_sec {
+    width: 100%;
+  }
 }
 
 .form-image img {
@@ -197,4 +207,11 @@ a:visited {
 
 .login-page {
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .login-page {
+    height: 140vh;
+  }
 }/*# sourceMappingURL=main-rtl.css.map */
