@@ -1,0 +1,28 @@
+.input {
+    position: relative;
+    &-element {
+        background-color: white;
+        border: 1px solid $main-color;
+        padding: 10px 20px;
+        padding-left: 45px;
+        color: $text-main;
+        font-size: 16px;
+        width: 100%;
+        &:focus {
+            outline: none;
+        }
+        &.invalid {
+            border: 1px solid $warning-color;
+        }
+    }
+    &-icon {
+        position: absolute;
+        #{$start-direction}: 15px;
+        color: $main-color;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &-invalid-msg {
+        color: $warning-color;
+    }
+}

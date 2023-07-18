@@ -1,0 +1,14 @@
+{
+    "form-title": "مرحبا من جديد!",
+    "form-title-sub": "سجل الدخول للإستمرار!",
+    "emailInvalidMsg": "من فضلك أدخل بريد إلكتروني صحيح!",
+    "passwordInvalidMsg": "من فضلك أدخل كلمة مرور صحيحة!",
+    "rememberLabel": "تذكرني",
+    "forgot-password": "هل نسيت كلمة المرور؟",
+    "Sign In": "سجل دخول",
+    "new-user": "مستخدم جديد؟",
+    "Sign Up": "انشاء حساب",
+    "copyrights": "جميع الحقوق محفوظة \u00A92023",
+    "terms":"شروط الاستخدام",
+    "privacy": "سياسة الخصوصية"
+}

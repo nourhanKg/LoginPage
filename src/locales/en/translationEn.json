@@ -1,0 +1,14 @@
+{
+    "form-title": "Welcome Back!",
+    "form-title-sub": "Login to continue!",
+    "emailInvalidMsg": "Please enter a valid email!",
+    "passwordInvalidMsg": "Please enter a valid password!",
+    "rememberLabel": "Remember Me",
+    "forgot-password": "Forgot Password?",
+    "Sign In": "Sign In",
+    "new-user": "New User?",
+    "Sign Up": "Sign Up",
+    "copyrights": "Copyrights reserved \u00A92023",
+    "terms":"Terms \u0026 Conditions",
+    "privacy": "Privacy Policy"
+}

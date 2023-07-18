@@ -1,0 +1,37 @@
+// html {
+//     font-size: 62.5%;
+//     @include responsive(tab-land) {
+//         font-size: 60%;
+//     }
+//     @include responsive(tab-port) {
+//         font-size: 50%;
+//     }
+//     @include responsive(phone) {
+//         font-size: 31.25%;
+//     }
+//     @include responsive(big) {
+//         font-size: 100%;
+//     }
+// }
+html {
+    direction: $direction;
+}
+body {
+    overflow: hidden;
+    box-sizing: border-box;
+} 
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    // transition: all .3s linear;
+    box-sizing: inherit;
+}
+a:link,
+a:visited {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
