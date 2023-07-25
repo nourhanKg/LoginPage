@@ -1,2 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 @import "base/direction-rtl";
 @import "./main";
+body {
+    font-family: 'Cairo', sans-serif;
+}

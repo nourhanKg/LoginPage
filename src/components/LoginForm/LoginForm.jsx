@@ -1,9 +1,9 @@
 import Card from "../UI/Card/Card";
 import formImage from "../../assets/login-form.png";
 import FormInput from "../UI/FormInput/FormInput";
-import {FaEnvelope} from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import {FaLock} from "react-icons/fa";
-
+import { FaCheck } from 'react-icons/fa';
 
 import { useTranslation } from "react-i18next";
 
@@ -26,7 +26,7 @@ function LoginForm() {
             <header className="header">
                 <h1>Logo</h1>
                 <button className="btn btn-lang" onClick={changeLanguage}>
-                    {i18n.language}
+                    {i18n.language === "ar"? "En" : "عربي"}
                 </button>
             </header>
             <div className="form-container">
@@ -40,21 +40,23 @@ function LoginForm() {
                         <FormInput 
                             type="email" 
                             className="form-input" 
-                            icon={<FaEnvelope/>} 
+                            icon={<FaUser/>} 
                             validation={validateEmail} 
-                            invalidMsg={t("emailInvalidMsg")}>
+                            invalidMsg={t("emailInvalidMsg")}
+                            placeholder={t("emailPlaceholder")}>
                         </FormInput>
                         <FormInput 
                             type="password" 
                             className="form-input" 
                             icon={<FaLock/>} 
                             validation={validatePassword} 
-                            invalidMsg={t("passwordInvalidMsg")}>
+                            invalidMsg={t("passwordInvalidMsg")}
+                            placeholder={t("passwordPlaceholder")}>
                         </FormInput>
                     </div>
                     <div className="form-options">
-                        <input type="checkbox"></input>
-                        <label>{t("rememberLabel")}</label>
+                        <input type="checkbox" className="checkbox" id="checkbox"></input>
+                        <label htmlFor="checkbox">{t("rememberLabel")} <span><FaCheck className="checkicon"/></span></label>
                         <a href="#">{t("forgot-password")}</a>
                     </div>
                     <div className="form-actions">

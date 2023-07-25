@@ -3,6 +3,8 @@
     "form-title-sub": "سجل الدخول للإستمرار!",
     "emailInvalidMsg": "من فضلك أدخل بريد إلكتروني صحيح!",
     "passwordInvalidMsg": "من فضلك أدخل كلمة مرور صحيحة!",
+    "emailPlaceholder": "البريد الإلكتروني",
+    "passwordPlaceholder": "كلمة المرور",
     "rememberLabel": "تذكرني",
     "forgot-password": "هل نسيت كلمة المرور؟",
     "Sign In": "سجل دخول",

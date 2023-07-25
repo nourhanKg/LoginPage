@@ -19,7 +19,8 @@ function FormInput(props) {
                 onChange={inputChangeHandler} 
                 onBlur={inputBlurHandler} 
                 type={props.type} 
-                className={`input-element ${invalidInput? "invalid" : ""} ${props.className}`}>
+                className={`input-element ${invalidInput? "invalid" : ""} ${props.className}`}
+                placeholder={props.placeholder}>
             </input>
             {props.icon && <span className="input-icon">{props.icon}</span>}
             </div>

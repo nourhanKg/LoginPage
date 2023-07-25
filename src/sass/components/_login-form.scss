@@ -1,17 +1,15 @@
+// @import "~react-icons/fa";
 .login-card {
-    position: absolute;
     width: 80%;
     padding-left: 50px;
     padding-right: 50px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: $sub-color;
 }
 .form-container {
     margin: 20px 0;
     display: flex;
     align-items: center;
+    gap: 20px;
     @include responsive($md) {
         flex-direction: column;
     }
@@ -45,7 +43,8 @@
     display: flex;
     color: $text-main;
     label {
-        padding-#{$start-direction}:  5px;
+        padding-#{$start-direction}:  25px;
+        position: relative;
     }
     input {
         accent-color: $main-color;
@@ -53,6 +52,41 @@
     a {
         display: block;
         margin-#{$start-direction}: auto;
+    }
+    .checkbox {
+        display: none;
+    }
+    //checkbox
+    .checkbox + label::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 50%;
+        #{$start-direction}: 0;
+        transform: translateY(-50%);
+        border: 1px solid $text-main;
+    }
+    .checkbox:checked + label::before {
+        background-color: $main-color;
+        border: none;
+    }
+    //checkmark
+    .checkbox + label .checkicon {
+        color: white;
+        position: absolute;
+        #{$start-direction}: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: none;
+        font-size: 12px;
+        width: 14px;
+        height: 14px;
+        padding: 1px;
+        padding-#{$start-direction}: 2px;
+    }
+    .checkbox:checked + label .checkicon{
+        display: block;
     }
 }
 .form-actions {
@@ -68,4 +102,9 @@
     font-size: 14px;
     display: flex;
     justify-content: space-between;
+    @include responsive($sm) {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }

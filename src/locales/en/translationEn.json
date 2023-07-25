@@ -3,6 +3,8 @@
     "form-title-sub": "Login to continue!",
     "emailInvalidMsg": "Please enter a valid email!",
     "passwordInvalidMsg": "Please enter a valid password!",
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Password",
     "rememberLabel": "Remember Me",
     "forgot-password": "Forgot Password?",
     "Sign In": "Sign In",
